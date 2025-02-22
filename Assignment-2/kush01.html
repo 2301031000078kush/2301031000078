@@ -1,0 +1,62 @@
+<style>
+  .lets-go-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 0.503;
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+    color: rgba(26, 120, 68, 1);
+    margin: 0 auto;
+    padding: 227px 53px 227px 13px;
+    font: 400 32px Inknut Antiqua, sans-serif;
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .foreground-image {
+    aspect-ratio: 1.41;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    align-self: start;
+  }
+  .cta-text {
+    position: relative;
+    align-self: center;
+    margin-top: 40px;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+</style>
+
+<div class="lets-go-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/72af003139faa9565116dca04b8e3c06d11f590f209c607fe1326bc81769f79c?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="background-image"
+    alt=""
+  />
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/84c8366381688689044dd8789e7878d9af2689bd1dc76938bf579e9abdd6ea08?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="foreground-image"
+    alt="Decorative foreground image"
+  />
+  <div class="cta-text" tabindex="0" role="button">LET'S GO</div>
+</div>

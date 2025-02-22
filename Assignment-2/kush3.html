@@ -1,0 +1,95 @@
+<style>
+  .comic-category-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 0.503;
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 236px 37px;
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .category-title {
+    position: relative;
+    color: #000;
+    align-self: center;
+    font: 32px/60px 'Inknut Antiqua', sans-serif;
+  }
+  .category-content {
+    position: relative;
+    display: flex;
+    margin-top: 13px;
+    white-space: nowrap;
+  }
+  .category-list {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    color: #1a7844;
+    font: 32px 'Inknut Antiqua', sans-serif;
+  }
+  .category-item {
+    line-height: 2;
+    align-self: start;
+  }
+  .category-item-spaced {
+    line-height: 70px;
+    margin-top: 109px;
+  }
+  .open-buttons {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font: 40px 'Itim', sans-serif;
+  }
+  .open-button {
+    border: 1px solid #000;
+  }
+  .open-button + .open-button {
+    margin-top: 5px;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+</style>
+
+<div class="comic-category-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/72af003139faa9565116dca04b8e3c06d11f590f209c607fe1326bc81769f79c?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="background-image"
+    alt=""
+  />
+  <h2 class="category-title">Comic Category</h2>
+  <div class="category-content">
+    <div class="category-list">
+      <div class="category-item">1.Action</div>
+      <div class="category-item category-item-spaced">4.Adventure</div>
+    </div>
+    <div class="open-buttons">
+      <button class="open-button" tabindex="0">|OPEN|</button>
+      <button class="open-button" tabindex="0">|OPEN|</button>
+      <button class="open-button" tabindex="0">|OPEN|</button>
+      <button class="open-button" tabindex="0">|OPEN|</button>
+      <button class="open-button" tabindex="0">|OPEN|</button>
+    </div>
+  </div>
+</div>

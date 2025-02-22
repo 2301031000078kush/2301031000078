@@ -1,0 +1,111 @@
+<style>
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 0.503;
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 316px 7px;
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .login-form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .input-labels {
+    display: flex;
+    flex-direction: column;
+    color: rgba(26, 120, 68, 1);
+    font: 400 20px Inknut Antiqua, sans-serif;
+  }
+  .password-label {
+    margin-top: 15px;
+  }
+  .input-fields {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: fit-content;
+  }
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 2.257;
+    padding-bottom: 69px;
+  }
+  .input-field {
+    position: relative;
+    background-color: rgba(217, 217, 217, 1);
+    display: flex;
+    height: 40px;
+    border: none;
+    padding: 5px;
+  }
+  .login-button {
+    z-index: 10;
+    background-color: rgba(224, 193, 16, 0.71);
+    align-self: flex-start;
+    margin-top: 39px;
+    color: rgba(26, 120, 68, 1);
+    padding: 12px 31px;
+    font: 400 24px Inknut Antiqua, sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+</style>
+
+<div class="login-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/72af003139faa9565116dca04b8e3c06d11f590f209c607fe1326bc81769f79c?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="background-image"
+    alt=""
+  />
+  <form class="login-form">
+    <div class="input-labels">
+      <label for="email-input">Email id</label>
+      <label for="password-input" class="password-label">Password</label>
+    </div>
+    <div class="input-fields">
+      <div class="input-wrapper">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/b55589e9536909e00d5e8209962bbd6f042e81dd38d9bbecb491a64ba6c64ab2?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+          class="background-image"
+          alt=""
+        />
+        <input type="email" id="email-input" class="input-field" aria-label="Email id" required />
+        <input type="password" id="password-input" class="input-field" aria-label="Password" required />
+      </div>
+      <button type="submit" class="login-button">Log in</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,89 @@
+<style>
+  .horror-comic-container {
+    background-color: #fff;
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: flex-start;
+    color: #000;
+    margin: 0 auto;
+    padding: 24px 17px 24px 0;
+    font: 400 32px Inknut Antiqua, sans-serif;
+  }
+  .comic-title {
+    z-index: 10;
+    margin-left: 20px;
+  }
+  .comic-cover {
+    aspect-ratio: 0.68;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    align-self: stretch;
+  }
+  .comic-name-label {
+    z-index: 10;
+    margin-top: -10px;
+  }
+  .feedback-container {
+    display: flex;
+    width: 100%;
+    max-width: 329px;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 15px;
+    white-space: nowrap;
+    justify-content: space-between;
+    margin: 16px 0 0 20px;
+  }
+  .feedback-icon {
+    aspect-ratio: 1.42;
+    object-fit: contain;
+    object-position: center;
+    width: 37px;
+    margin-top: 8px;
+  }
+  .feedback-button {
+    z-index: 10;
+    background-color: #fff;
+    padding: 0 14px;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
+<div class="horror-comic-container">
+  <h1 class="comic-title">Horror comic</h1>
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/5f079cd078b507e823fac69c47752b6a7daefac3a44d54293eae2055f2c801a7?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="comic-cover"
+    alt="Horror comic cover"
+  />
+  <p class="comic-name-label">Comic name:-</p>
+  <div class="feedback-container">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/cabd9c0a82f27fdceb8e5ff41154db14e109bc3a96145b508d13e49f3e615477?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+      class="feedback-icon"
+      alt=""
+    />
+    <button class="feedback-button" tabindex="0">
+      <span class="visually-hidden">Provide feedback</span>
+      feedback
+    </button>
+  </div>
+</div>

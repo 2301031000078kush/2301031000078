@@ -1,0 +1,64 @@
+<style>
+.feedback-container {
+  background-color: #fff;
+  display: flex;
+  max-width: 480px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: flex-start;
+  color: #000;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding: 24px 61px 24px 21px;
+  font: 400 15px Inknut Antiqua, sans-serif;
+}
+
+.main-image {
+  aspect-ratio: 0.46;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.feedback-wrapper {
+  display: flex;
+  margin-top: 20px;
+  gap: 40px 100px;
+}
+
+.icon {
+  aspect-ratio: 1.42;
+  object-fit: contain;
+  object-position: center;
+  width: 37px;
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.feedback-button {
+  z-index: 10;
+  background-color: #fff;
+  padding: 5px 14px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+</style>
+
+<div class="feedback-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce7ff6d159464821af6b0bab9fa7401f1b53e566cc720db03492aee2c8d7b960?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="main-image"
+    alt="Main feedback section image"
+  />
+  <div class="feedback-wrapper">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/cabd9c0a82f27fdceb8e5ff41154db14e109bc3a96145b508d13e49f3e615477?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+      class="icon"
+      alt="Feedback icon"
+    />
+    <button class="feedback-button" tabindex="0">feedback</button>
+  </div>
+</div>

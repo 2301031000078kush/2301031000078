@@ -1,0 +1,129 @@
+<style>
+.feedback-container {
+  background-color: #fff;
+  display: flex;
+  max-width: 480px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: start;
+  margin: 0 auto;
+  padding: 32px 43px 18px 10px;
+  font: 400 16px Inknut Antiqua, sans-serif;
+}
+.feedback-title {
+  color: #000;
+  font-size: 32px;
+  margin-left: 19px;
+}
+.feedback-question {
+  color: #000;
+  margin: 34px 0 0 19px;
+}
+.feedback-image {
+  aspect-ratio: 5.32;
+  object-fit: contain;
+  object-position: center;
+  width: 330px;
+  background-blend-mode: hard_light;
+  margin-top: 23px;
+  max-width: 330px;
+}
+.thoughts-prompt {
+  color: #000;
+  align-self: stretch;
+  margin-top: 36px;
+}
+.feedback-textarea {
+  background-color: #fff;
+  display: flex;
+  margin-top: 10px;
+  width: 352px;
+  max-width: 100%;
+  height: 202px;
+  border: 1px solid #000;
+}
+.button-container {
+  display: flex;
+  margin-top: 72px;
+  gap: 23px;
+  font-size: 36px;
+  white-space: nowrap;
+}
+.send-button {
+  z-index: 10;
+  background-color: #2e6cfb;
+  align-self: start;
+  margin-top: 17px;
+  color: #fff;
+  padding: 0 26px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.cancel-container {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+.cancel-button {
+  z-index: 10;
+  margin: 0 13px 0 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 36px;
+  padding: 0;
+}
+.cancel-border {
+  background-color: #fff;
+  display: flex;
+  height: 60px;
+  border: 1px solid #000;
+}
+.footer-image {
+  aspect-ratio: 1.42;
+  object-fit: contain;
+  object-position: center;
+  width: 37px;
+  margin-top: 89px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>
+
+<div class="feedback-container">
+  <h1 class="feedback-title">Give feedback</h1>
+  <p class="feedback-question">What do you think of the comics?</p>
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1f884b706e8f0ca1d6bcb547939b28c77e2617a08a61955ef50a8c38e23dad4?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="feedback-image"
+    alt="Comic illustration"
+  />
+  <form>
+    <label for="feedback-input" class="thoughts-prompt">Do you have any thoughts like to share?</label>
+    <textarea id="feedback-input" class="feedback-textarea" aria-label="Share your thoughts"></textarea>
+    <div class="button-container">
+      <button type="submit" class="send-button">Send</button>
+      <div class="cancel-container">
+        <button type="button" class="cancel-button">Cancel</button>
+        <div class="cancel-border"></div>
+      </div>
+    </div>
+  </form>
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/cabd9c0a82f27fdceb8e5ff41154db14e109bc3a96145b508d13e49f3e615477?placeholderIfAbsent=true&apiKey=9352e7e076e74499b0e6634fc9b69d41"
+    class="footer-image"
+    alt=""
+  />
+</div>
